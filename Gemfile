@@ -6,11 +6,8 @@ git_source(:github) do |repo_name|
 end
 
 
-if ENV['RAILS_ENV'] == 'development' || ENV['RAILS_ENV'] == 'test'
-  gem 'exchequer_client', path: '../exchequer-client/'
-else
-  gem 'exchequer_client', :git => 'git://github.com/dailydrip/exchequer-client.git'
-end
+# gem 'exchequer_client', path: '../exchequer-client/'
+gem 'exchequer_client', :git => 'git://github.com/dailydrip/exchequer-client.git'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
