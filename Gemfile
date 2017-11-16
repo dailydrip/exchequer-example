@@ -5,6 +5,11 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+puts "-"*50
+puts ENV['RAILS_ENV']
+puts "-"*50
+
+
 if ENV['RAILS_ENV'] != 'production'
   gem 'exchequer_client', path: '../exchequer-client/'
 else
