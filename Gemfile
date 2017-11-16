@@ -10,12 +10,9 @@ puts ENV['RAILS_ENV']
 puts "-"*50
 
 
-if ENV['RAILS_ENV'] != 'production'
+if ENV['RAILS_ENV'] == 'development' || ENV['RAILS_ENV'] == 'test'
   gem 'exchequer_client', path: '../exchequer-client/'
-end
-
-if ENV['RAILS_ENV'] == ''
-  puts "Installing from GIT"
+else
   gem 'exchequer_client', :git => 'git://github.com/dailydrip/exchequer-client.git'
 end
 
