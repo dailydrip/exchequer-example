@@ -1,0 +1,28 @@
+<h3>Welcome to Exchequer Example</h3>
+
+This is an example of how to use <a href="https://github.com/dailydrip/exchequer-server">ExchequerServer</a> with the gem <a href="https://github.com/dailydrip/exchequer-client">Exchequer Client</a>.
+
+<h5>Environment Variables</h5>
+
+We need to set where Exchequer is running.
+
+<p>
+  <code>
+  export EXCHEQUER_TOKEN="TOKEN"
+  export BASE_URL="https://exchequer-server.herokuapp.com/"
+  export BASE_API_URL="https://exchequer-server.herokuapp.com/api/v1/"
+  </code>
+</p>
+
+
+<h5>Example</h5>
+
+<b>Offers Endpoint</b>
+
+<p>
+  In the Offers Endpoint it uses the OfferClient, getting the Offers from the API. Once we click buy, it calls the checkout iframe and it renders it.
+</p>
+
+<ul>
+  <li><a href="/offers">Offers</a></li>
+</ul>

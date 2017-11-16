@@ -4,3 +4,15 @@ Example app for
 [Exchequer-server](https://github.com/dailydrip/exchequer-server) and
 [Exchequer-client](https://github.com/dailydrip/exchequer-client).
 
+
+## Environment Variables
+
+We need to have the token set up and the URL from where the ExchequerServer is
+running.
+
+
+```sh
+export EXCHEQUER_TOKEN="TOKEN"
+export BASE_URL="https://exchequer-server.herokuapp.com/"
+export BASE_API_URL="https://exchequer-server.herokuapp.com/api/v1/"
+```
