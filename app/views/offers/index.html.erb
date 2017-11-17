@@ -1,15 +1,18 @@
 <h2>Offers</h2>
 
 <% @offers.each do |offer| %>
-  <div style="margin: 5px; border: 2px solid;border-radius: 25px; width: 400px; height: 100px; padding: 10px;">
+  <div>
     <div>
-      <%= offer.name %>
+      Name: <%= offer.name %>
     </div>
     <div>
-      <%= offer.description %>
+      Description: <%= offer.description %>
     </div>
     <div>
-      <%= link_to "Buy", ExchequerClient::URL.checkout(offer.id), target: :_blank %>
+      <%= link_to "Buy", ExchequerClient::URL.checkout(offer.id) %>
+    </div>
+    <div>
+      <%= ExchequerClient::Iframe::Offers.checkout(offer.id).html_safe %>
     </div>
   </div>
 <% end %>
