@@ -1,6 +1,5 @@
-GIT
-  remote: git://github.com/dailydrip/exchequer-client.git
-  revision: f62dc1954ce49c09a759efccaca2cfbaa353e00e
+PATH
+  remote: ../exchequer-client
   specs:
     exchequer_client (0.1.0)
       faraday
