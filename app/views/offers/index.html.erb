@@ -9,10 +9,10 @@
       Description: <%= offer.description %>
     </div>
     <div>
-      <%= link_to "Buy", ExchequerClient::URL.offers_show(offer.id) %>
+      <%= link_to "Buy", ExchequerClient::URL.offers_show(offer.id, @manager_public_token) %>
     </div>
     <div>
-      <%= ExchequerClient::Iframe::Offers.show(offer.id).html_safe %>
+      <%= ExchequerClient::Iframe::Offers.show(offer.id, @manager_public_token).html_safe %>
     </div>
   </div>
 <% end %>
