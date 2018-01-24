@@ -14,6 +14,6 @@ running.
 ```sh
 export EXCHEQUER_API_TOKEN="TOKEN"
 export EXCHEQUER_MANAGER_PUBLIC_TOKEN="MANAGER PUBLIC TOKEN"
-export BASE_URL="https://exchequer-server.herokuapp.com/"
-export BASE_API_URL="https://exchequer-server.herokuapp.com/api/v1/"
+export EXCHEQUER_BASE_URL="https://exchequer-server.herokuapp.com/"
+export EXCHEQUER_BASE_API_URL="https://exchequer-server.herokuapp.com/api/v1/"
 ```
