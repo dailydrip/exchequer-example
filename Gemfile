@@ -6,8 +6,8 @@ git_source(:github) do |repo_name|
 end
 
 
-#gem 'exchequer_client', path: '../exchequer-client/'
-gem 'exchequer_client', :git => 'git://github.com/dailydrip/exchequer-client.git'
+gem 'exchequer_client', path: '../exchequer-client/'
+#gem 'exchequer_client', :git => 'git://github.com/dailydrip/exchequer-client.git'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
